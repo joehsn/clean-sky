@@ -8,12 +8,8 @@ export default function NavbarComponent() {
     let navbar = document.querySelector(".navbar");
     window.addEventListener("scroll", () => {
       if (window.scrollY) {
-        navbar.classList.replace("bg-transparent", "bg-white");
-        navbar.classList.replace("navbar-dark", "navbar-light");
-        navbar.style.boxShadow = "0px 0px 15px rgba(0, 0, 0, 0.1)";
+        navbar.style.boxShadow = "0px 0px 15px 0px rgba(0, 0, 0, 0.25)";
       } else {
-        navbar.classList.replace("bg-white", "bg-transparent");
-        navbar.classList.replace("navbar-light", "navbar-dark");
         navbar.style.boxShadow = "none";
       }
     });
@@ -21,12 +17,11 @@ export default function NavbarComponent() {
 
   return (
     <Navbar
-      bg="transparent"
-      variant="dark"
+      bg="white"
+      variant="light"
       expand="lg"
       fixed="top"
       expanded={toggle}
-      className="navbar"
     >
       <Container>
         <Navbar.Brand href="/" className="logo">

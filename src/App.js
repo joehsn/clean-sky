@@ -5,7 +5,7 @@ import { ThemeProvider } from "react-bootstrap";
 
 export default function App() {
   return (
-    <ThemeProvider>
+    <ThemeProvider dir="ltr">
       <Router>
         <Navbar />
         <Routes>

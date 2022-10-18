@@ -1,56 +1,21 @@
 import React from "react";
-import { Footer } from "../components";
+import { Container, Row } from "react-bootstrap";
+import { Features, Footer } from "../components";
 
-export default function Features() {
+export default function FeaturesPage() {
   return (
     <>
-      <div className="page">
-        <section className="clean-block features">
-          <div className="container">
-            <div className="block-heading">
-              <h2 className="text-info">Features</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                quam urna, dignissim nec auctor in, mattis vitae leo.
-              </p>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-md-5 feature-box">
-                <i className="icon-star icon"></i>
-                <h4>Bootstrap 5</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  quam urna, dignissim nec auctor in, mattis vitae leo.
-                </p>
-              </div>
-              <div className="col-md-5 feature-box">
-                <i className="icon-pencil icon"></i>
-                <h4>Customizable</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  quam urna, dignissim nec auctor in, mattis vitae leo.
-                </p>
-              </div>
-              <div className="col-md-5 feature-box">
-                <i className="icon-screen-smartphone icon"></i>
-                <h4>Responsive</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  quam urna, dignissim nec auctor in, mattis vitae leo.
-                </p>
-              </div>
-              <div className="col-md-5 feature-box">
-                <i className="icon-refresh icon"></i>
-                <h4>All Browser Compatibility</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  quam urna, dignissim nec auctor in, mattis vitae leo.
-                </p>
-              </div>
-            </div>
+      <section className="block features page">
+        <Container>
+          <div className="block-heading">
+            <h2 className="text-info">Features</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-        </section>
-      </div>
+          <Row className="justify-content-center">
+            <Features />
+          </Row>
+        </Container>
+      </section>
       <Footer />
     </>
   );

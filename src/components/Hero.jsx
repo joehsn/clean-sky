@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="clean-block clean-hero">
+    <section className="block clean-hero page">
       <div className="text">
         <h2>Lorem ipsum dolor sit amet.</h2>
         <p>
